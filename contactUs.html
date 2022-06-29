@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר</title>
+    <meta name="description" content="יצירת קשק-אילתור'ס'" />
+    <meta name="keywords" content="eilat,tourist,contact" />
+    <meta name="author" content="coral&lior" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="CSS/contact/reset.css" rel="stylesheet" />
+    <link href="CSS/contact/contactUs.css" rel="stylesheet" />
+    <link href="images/contactUsimages/פאביקון-אילתורס.gif" rel="icon" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <section class="perHeader">
+            <nav id="topNav" aria-label="תפריט ניווט עליון">
+                <ul>
+                    <li>
+                        <a href="" class="menu">מה עושים באילת?</a>
+                        <ul id="inner-menu">
+
+                            <li>
+                                <a href="loMaSh.html">אילת- לא מה שהכרתם</a>
+                            </li>
+                            <li>
+                                <a href="goldRules.html">כללי הזהב לתייר</a>
+                            </li>
+                            <li>
+                                <a href="">חשוב לדעת - שונית ים סוף</a>
+                            </li>
+                            <li>
+                                <a href="">חשוב לדעת - הטבע המדברי</a>
+                            </li>
+                            <li>
+                                <a href="">אטרקציות</a>
+                            </li>
+                            <li>
+                                <a href="">חיי לילה</a>
+                            </li>
+
+                        </ul>
+                    </li>
+
+                    <li id="mapa">
+                        <a href="mapatAtar.html" class="menu">מפת אתר</a>
+                    </li>
+
+                    <li id="linklogo">
+                        <a href="home.html"> <img class="logo" src="images/Homeimages/לוגו-אילתורס.gif" /></a>
+                    </li>
+
+                    <li>
+                        <a href="" class="menu">צור קשר</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="menu">אודות אילתורס</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
+    </header>
+    <form method="post" id="form">
+        <!--=======STR======== טופס יצירת קשר- אילתורס ==============-->
+        <input type="hidden" id="myEmail" name="Eilatours" value="lbs.lior@gmail.com" />
+
+        <section class="contactUsForm">
+            <div id="taContact">
+                <h1>צור קשר</h1>
+                <br />
+                <h2> יש לך שאלה? רוצה להציע לנו הצעה? הגעת למקום הנכון</h2>
+                <p id="textContact">מלא.י את הטופס הבא וניצור עמך קשר בהקדם  לפנייתך</p>
+            </div>
+            <br />
+            <div class="contactusform">
+                <div>
+                    <label for="firstName">
+                        <span class="eilatours">*</span> שם פרטי:
+                    </label>
+                    <br />
+                    <input type="text" id="firstName" name="firstName" aria-required="true"
+                           autocomplete="on" role="alert" title="יש להזין שם פרטי" aria-invalid="true" />
+                </div>
+
+                <div>
+                    <label for="lastName">
+                        <span class="eilatours">*</span> שם משפחה:
+                    </label>
+                    <br />
+                    <input type="text" id="lastName" name="lastName" aria-required="true"
+                           autocomplete="on" role="alert" title="יש להזין שם משפחה" aria-invalid="true" />
+                </div>
+
+                <br />
+                <div>
+                    <label for="email">
+                        <span class="eilatours">*</span> כתובת דואר אלקטרוני:
+                    </label>
+                    <br />
+                    <input type="email" id="email" name="email"
+                           aria-required="true" autocomplete="on" title="יש להזין את כתובת הדואר האלקטרוני שלך" aria-invalid="true" />
+                </div>
+                <br />
+                <div>
+                    <label for="phoneNumber">
+                        <span class="eilatours">*</span> מספר טלפון נייד:
+                    </label>
+                    <br />
+                    <input type="number" id="phoneNumber" name="phoneNumber"
+                           aria-required="true" autocomplete="on" aria-describedby="int1" title="יש להזין את מספר הטלפון הנייד שלך" aria-invalid="true" />
+
+                    <p id="numbers">יש להזין ספרות בלבד, עד 10 </p>
+                </div>
+                <br />
+                <div>
+                    <label for="topic">
+                        <span class="eilatours">*</span> פנייה בנושא:
+                        <br />
+                        <select id="topic" name="topic" placeholder="יש להזין את נושא או עניין הפנייה" aria-required="true" title="יש להזין את נושא או עניין הפנייה"
+                                aria-invalid="true">
+                            <option value="1" disabled selected>בחר את נושא הפנייה</option>
+                            <option value="2">ברצוני לשאול שאלה</option>
+                            <option value="3">ברצוני לשתף במידע חדש הרלוונטי לאתר</option>
+                            <option value="4">ברצוני לשתף פעולה</option>
+                            <option value="5">נושא אחר</option>
+                        </select>
+                    </label>
+                </div>
+                <br />
+
+                <div>
+                    <label for="content">
+                        <span class="eilatours">*</span> תוכן הפנייה:
+                    </label>
+                    <br />
+                    <textarea id="content" name="content" rows="10" aria-required="true" title="כאן יש להזין את פנייתך אלינו" aria-invalid="true"></textarea>
+                </div>
+                <br />
+                <div>
+                    <input class="Button" type="button" onclick="shliha()" value="שליחה" />
+                    <input class="buttom" type="reset" name="reset1" value="ניקוי טופס">
+                </div>
+            </div>
+        </section>
+    </form>
+    <footer>
+        <section class="perfooter">
+            <nav id="bottomNav" aria-label="תפריט ניווט תחתון">
+
+                <ul>
+                    <li id="inner-footer-menu">
+                        <a href="" class="bottomMenu">מה עושים באילת?</a>
+                        <br />
+                        <a href="loMaSh.html" class="bottomMenu">אילת- לא מה שהכרתם</a>
+                        <br />
+                        <a href="goldRules.html" class="bottomMenu">כללי הזהב לתייר</a>
+                        <br />
+                        <a href="" class="bottomMenu">חשוב לדעת - שונית ים סוף</a>
+                        <br />
+                        <a href="" class="bottomMenu">חשוב לדעת - הטבע המדברי</a>
+                        <br />
+                        <a href="" class="bottomMenu">אטרקציות</a>
+                        <br />
+                        <a href="" class="bottomMenu">חיי לילה</a>
+                    </li>
+
+
+                    <li id="mapa">
+                        <a href="mapatAtar.html" class="bottomMenu">מפת אתר</a>
+                    </li>
+
+                    <li id="linklogofooter">
+                        <a href="home.html"> <img class="logo" src="images/Homeimages/לוגו-אילתורס.gif" /></a>
+                    </li>
+
+                    <li>
+                        <a href="" class="bottomMenu">צור קשר</a>
+                    </li>
+
+                    <li>
+                        <a href="about.html" class="bottomMenu">אודות אילתורס</a>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
+    </footer>
+
+
+</body>
+</html>
